@@ -1,0 +1,538 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'judah';
+    src: url('Police/Bacasime_Antique/BacasimeAntique-Regular.ttf') format('truetype');
+}
+
+
+body {
+    background-image: url('photos/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 1000px;
+    position: relative;
+
+
+
+}
+
+header {
+    width: 100%;
+}
+
+
+#logo {
+    width: 80%;
+    margin: 30% 18%;
+
+
+}
+
+#logo img {
+    width: 55%;
+}
+
+
+
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    margin-left: 18%;
+    margin-top: -200px;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+#navigation a {
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0.4;
+
+}
+
+#navigation a:hover {
+    opacity: 1;
+    border-bottom: 5px solid black;
+    padding-bottom: 21px;
+
+}
+
+#navigation li:first-of-type a {
+    opacity: 1;
+    border-bottom: 5px solid black;
+    padding-bottom: 21px;
+
+
+
+}
+
+#navigation2 {
+    display: flex;
+    background-color: black;
+    column-gap: 30px;
+    list-style: none;
+    margin: 0;
+    width: 1350px;
+    height: 65px;
+    padding-left: 180px;
+
+
+
+
+
+
+}
+
+#navigation2 li,
+#navigation li {
+    padding-top: 20px;
+}
+
+#navigation2 a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 10px;
+
+
+}
+
+#navigation2 li:hover a {
+    border-top: 5px solid white;
+    padding-top: 18px;
+
+}
+
+
+
+#search {
+    position: fixed;
+    top: 400px;
+    right: 0%;
+    padding-top: 10px;
+    background-color: aliceblue;
+    display: flex;
+    width: 40px;
+    border-radius: 6px 0 0 6px;
+    height: 40px;
+    padding: 6px 2px 2px 6px;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+
+label {
+    width: 40px;
+    height: 30px;
+    border-radius: 6px 0 0 6px;
+    position: relative;
+    margin-right: -0.7rem;
+}
+
+label:before {
+    content: "";
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+}
+
+label img {
+    height: 30px;
+    object-fit: cover;
+}
+
+#search input {
+    height: 30px;
+    display: none;
+    padding-left: 1.7rem;
+    border-style: none;
+    border: 1px solid;
+}
+
+
+#search:hover {
+    animation-name: gauche;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+#search:hover > input {
+    display: block;
+    z-index: 2;
+    width: 90%;
+}
+
+
+
+
+main {
+    background-color: white;
+    width: 1350px;
+}
+
+#sect1 {
+    display: flex;
+    justify-content: center;
+
+    column-gap: 50px;
+    padding-top: 100px;
+}
+
+#h1 {
+    padding-left: 200px;
+
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'judah';
+    font-weight: 1;
+    
+
+}
+
+#section1 p {
+    width: 650px;
+    margin-right: 200px;
+}
+
+#section1 span {
+    font-size: 25px;
+    font-family: 'judah';
+    text-align: justify;
+}
+
+#section2 {
+    padding-top: 30px;
+}
+
+#lignes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+#lignes hr {
+    width: 470px;
+    height: 7px;
+    background-color: black;
+
+}
+
+#sect2 {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+
+    column-gap: 300px;
+    margin-left: 190px;
+    padding-top: 10px;
+    
+}
+
+#sect2 li {
+
+    font-size: 20px;
+}
+
+
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+    
+    
+    
+}
+
+#images1,#images2 {
+    display: flex;
+    width:600px;
+    margin: 100px auto;
+    overflow: hidden;
+    
+   
+   
+    
+    
+
+}
+
+#images1 img, #images2 img{
+    width: 700px;
+    flex-shrink: 0;
+    animation-name: defile; 
+    animation-duration: 20s;
+
+
+    
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes gauche {
+    0% {
+
+        width: 200px;
+
+    justify-content: space-between;
+}
+
+    100% {
+        width: 200px;
+        justify-content: space-between;
+
+    }
+}
+
+@keyframes defile {
+    0%,5% {
+        transform: translateX(0)
+
+
+    }
+
+    20%,45% {
+        transform: translateX(-100%);
+        
+
+    }
+    50%,75% {
+        
+        transform: translateX(-200%);
+       
+    }
+
+    80%,100% {
+       
+        transform: translateX(-300%);
+
+        
+
+
+    }
+
+    
+}
+
+#images2 {
+    width: 500px;
+    /* animation-name: defile2; */
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+
+
+/* @keyframes defile2 { 
+    0% {
+        background-image: url('photos/image1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-delay: inherit;
+        transform: translateX(-150px);
+
+    }
+
+    10% {
+        transform: translateX(0px);
+        background-image: none;
+
+    }
+
+    25% {
+        background-image: url('photos/image2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateX(-150px);
+
+
+    }
+
+    35% {
+        transform: translateX(0px);
+        background-image: none;
+
+    }
+
+
+    50% {
+        background-image: url('photos/image3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateX(-150px);
+        background-image: none;
+    }
+
+    55% {
+        transform: translateX(0px);
+        background-image: none;
+
+    }
+
+
+    100% {
+        background-image: url('photos/image4.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateX(-150px);
+    }
+} */
+
+#images1 img,
+#images2 img {
+    width: 500px;
+    opacity: 1;
+}
+
+#details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    
+    padding: 0 100px;
+}
+
+#details div {
+    width: 300px;
+}
+
+#details h3 {
+    text-align: center;
+    font-family: 'judah';
+
+    padding: 30px 0;
+}
+
+#details p {
+    text-align: left;
+    font-family: 'judah';
+    font-size: 20px;
+}
+
+#sect3 figure img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+
+
+}
+
+#section3 {
+    padding: 10px;
+}
+
+#section3 hr {
+    width: 80%;
+    height: 5px;
+    background-color: black;
+   margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+#section3 h3 {
+    font-size: 30px;
+    margin-left: 125px;
+
+    margin-bottom: 40px;
+    opacity: 0.6;
+    font-family: sans-serif;
+}
+
+#sect3 {
+    display: flex;
+    column-gap: 20px;
+    margin-left: 100px;
+
+}
+
+#sect3 #Kommunikationdesign {
+    width: 450px;
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+
+#sect3 a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    height: 350px;
+    
+}
+
+#foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+#foot img{
+      width: 100%;
+}
+
+#foot figure{
+    width: 300px;
+}
+
+#foot div{
+    width: 300px;
+}
+
+#foot p{
+    color: white;
+    
+    
+}
+
+#foot p {
+    color: white;
+    font-size: 20px;
+   
+    
+}
+
+#foot h4 {
+    color: white;
+    font-size: 20px;
+   
+    
+}
+
